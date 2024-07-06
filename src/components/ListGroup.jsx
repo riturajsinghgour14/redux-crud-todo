@@ -26,7 +26,7 @@ const ListGroup = () => {
         );
     }
 
-    if(todos.length === 0){
+    if(todos?.length === 0){
       return(
          <h1 className="text-secondary display-5 text-center">Not Todos Yet </h1>
       );
@@ -36,7 +36,7 @@ const ListGroup = () => {
   return (
       <ul className="list-group my-2">
         {
-          todos.map((todo) =>(
+          todos?.map((todo) =>(
             <ListItem key={todo._id} todo={todo}/>)
          )}
     </ul>
